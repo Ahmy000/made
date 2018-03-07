@@ -25,3 +25,8 @@ CursorLoader
 That means common loader usual is AsyncTaskLoader<D> which managed by LoaderManager inside Activity or Fragment.
 
 # LoaderManager
+Activity.getLoaderManager()
+Fragment.getLoaderManager()
+
+getLoaderManager().restartLoader(
+getLoaderManager().initLoader(
