@@ -1,5 +1,18 @@
 
 ### year: 2018
+## date: 0307
+
+# SharedPreferences
+public interface SharedPreferences 
+
+Context::
+SharedPreferences getSharedPreferences (String name, 
+                int mode)
+                
+ sharedPreferences.edit().putString("key", "value").apply()
+ sharedPreferences.getString("key", "defaultValue")
+
+                
 ## date: 0306
 # Bundle
 public final class Bundle 
@@ -30,3 +43,13 @@ Fragment.getLoaderManager()
 
 getLoaderManager().restartLoader(
 getLoaderManager().initLoader(
+
+# must override method
+protected abstract SomeType someMethod();
+
+# AsyncTaskLoader
+public abstract class AsyncTaskLoader 
+extends Loader<D> 
+
+must be override 
+abstract D loadInBackground()
