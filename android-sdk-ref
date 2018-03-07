@@ -1,0 +1,27 @@
+
+### year: 2018
+## date: 0306
+# Bundle
+public final class Bundle 
+extends BaseBundle implements Cloneable, Parcelable
+
+a HashMap inside it, 
+getXXX(String key)/putXXX(String key, XXX value)
+
+Bundle bundle = new Bundle();
+bundle.putString("key", "value");
+
+# Loader
+public class Loader 
+extends Object 
+
+A class that performs asynchronous loading of data. 
+Loaders were designed for activities and fragments in order to cleanly handle configuration changes that occur in Activites and Fragments
+ Known Direct Subclasses
+AsyncTaskLoader<D>
+  Known Indirect Subclasses
+CursorLoader
+
+That means common loader usual is AsyncTaskLoader<D> which managed by LoaderManager inside Activity or Fragment.
+
+# LoaderManager
