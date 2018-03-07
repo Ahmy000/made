@@ -53,3 +53,9 @@ extends Loader<D>
 
 must be override 
 abstract D loadInBackground()
+
+# how to use loader or self-defined loader
+LoaderManager is public in Activity and Fragment, first thing we do is implemeting LoaderCallbacks, 
+and return Loader by onCreateLoader. 
+Secondly is start the loader, if use AsyncTaskLoader, method loadInBackground is core, 
+otherwise override method onStartLoading.
