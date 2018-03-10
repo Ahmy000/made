@@ -1,0 +1,42 @@
+
+### year: 2018
+## date: 0310
+## questions
+# 有两个以上的activity都想在launcher里面，但是一旦启动app，由于有默认的activity，因此打开另一个的时候并不会显示该activity
+
+
+## adb
+
+#
+adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
+adb shell am start -n com.github.shadowsocks/.MainActivity
+
+# xiaomi
+adb shell am start -n com.miui.home/.launcher.Launcher
+adb shell am start -n com.miui.gallery/.activity.HomePageActivity
+adb shell pm clear com.pit.airk
+
+#
+adb shell pm list packages -f
+adb shell 'pm list packages -f' | sed -e 's/.*=//' | sort
+
+
+adb shell dumpsys package | grep -i com.android.chrome
+adb shell dumpsys package | grep -i com.android.chrome | grep Activity // this only reveal some named activity, but may not you wanted.
+#
+adb install -r xx.apk // force reinstall
+adb -s emulator-5554 install myapp.apk
+
+
+## aapt(build-tools)
+aapt - Android Asset Packaging Tool,
+.dex (Dalvik Executable)
+
+aapt dump badging xx.apk
+
+
+## tools
+dex2jar
+apktool
+adapt
+adb
