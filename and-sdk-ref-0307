@@ -1,5 +1,23 @@
 
 ### year: 2018
+
+## date: 0310
+#
+android.os.Handler
+android.os.Looper -- Threads by default do not have a message loop associated with them
+android.os.Handler.Callback
+android.os.HandlerThread -- Handy class for starting a new thread that has a looper.
+android.os.Message
+  
+#
+public abstract class AsyncTask 
+android.os.AsyncTask<Params, Progress, Result>
+
+-- obtainMessage or Message.obtain. More efficient than creating and allocating new instances
+#
+view.getHandler()
+view.post(msg)
+
 ## date: 0307
 
 # SharedPreferences
