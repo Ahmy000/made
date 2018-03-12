@@ -10,9 +10,13 @@ code repo
 code repository
 repo
 
+#
+Gradle is a Groovy-based build automation tool. 
+So, it will certainly help if you have some prior exposure to Groovy. 
+In addition, you should have working knowledge of Java.
+
 # 
 In this article, we presented Ant, Maven, and Gradle – three Java build automation tools.
-
 Not surprisingly, Maven holds the majority of the build tool market today. 
 Gradle, however, has seen good adoption in more complex codebases, 
 including a number of open-source projects such as Spring.
