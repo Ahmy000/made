@@ -1,6 +1,12 @@
 
 ### year: 2018
 
+## date: 0312
+# conifg for activity 
+android:configChanges="keyboardHidden|orientation|screenSize" -- onCreate will be called without this or improper 
+
+fun onConfigurationChanged 
+
 ## date: 0310
 #
 android.os.Handler
