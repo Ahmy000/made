@@ -1,6 +1,17 @@
 
 ### year: 2018
 
+
+## date: 0313
+# ActivityCompat
+shouldShowRequestPermissionRationale
+requestPermissions
+
+# ContextCompat -- ActivityCompat is derived class
+checkSelfPermission(Context context, String permission)
+
+# 
+
 ## date: 0312
 # conifg for activity 
 android:configChanges="keyboardHidden|orientation|screenSize" -- onCreate will be called without this or improper 
