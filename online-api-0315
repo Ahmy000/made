@@ -1,0 +1,24 @@
+
+
+### year: 2018
+## date: 0315
+
+
+#
+
+# coindesk
+https://api.coindesk.com/v1/bpi/historical/close.json?start=2018-01-01&end=2018-03-14
+https://api.coindesk.com/v1/bpi/currentprice/usd.json
+
+# cryptocompare
+https://www.cryptocompare.com/coins/btc/markets/USD
+https://www.cryptocompare.com/api/
+https://github.com/cryptoqween/cryptoqween.github.io
+
+# openweather
+https://openweathermap.org/api
+
+# aqicn
+http://aqicn.org/api/
+
+"http://api.waqi.info/search/?token=f8289839be43e1da25f5d9a19f951a25012d9e22&keyword=dalian"
