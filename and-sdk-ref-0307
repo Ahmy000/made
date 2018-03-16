@@ -1,5 +1,9 @@
-
 ### year: 2018
+## date: 0316
+# 
+java.lang.System -- operate JVM directly, including exit(0)
+android.os.Process -- get the OS processes info
+android.os.Process.killProcess(android.os.Process.myPid());
 
 
 ## date: 0313
