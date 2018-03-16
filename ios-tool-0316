@@ -1,0 +1,6 @@
+### year: 2018
+
+##  date: 0316
+#
+xcrun simctl io booted screenshot
+xcrun simctl io booted recordVideo xx.mov
