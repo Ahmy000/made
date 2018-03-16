@@ -1,0 +1,30 @@
+
+### year: 2018
+## date: 0316
+
+## hotkey
+# tool window/view
+CMD + 0: toggle messages tool window
+CMD + 1: project, show/hide left pan
+CMD + 2: favorite
+CMD + 6: logcat
+CMD + 9: version control
+
+CMD + shift + F12: hide all tool windows
+
+Alt + F1, 1: scroll from source
+
+# browser
+CMD + up: show file path
+CMD + down: go to definition
+CMD + u: super method/class
+
+# edit
+CMD + Shift + delete: go to last modification
+CMD + Alt + L: format code
+
+CMD + E: recent files
+
+
+
+
