@@ -1,0 +1,18 @@
+### year: 2018
+## date: 0316
+
+## Mac
+CMD + ALT + +/- # screen zoom in/out
+CMD + ALT + * # zoom switch
+
+## git
+git branch --no-merged develop # find branch which is not merged or not
+git branch --merged develop
+git commit --amend --author="Author Name <email@address.com>" # update current commit's user
+git pull --allow-unrelated-histories # unrelated histories
+
+
+## shell
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch  # remove DS_Store recurvly
+find . -name '*.swp' -print0 | xargs -0 git rm --cached  # is use *, need add '*'
+find ~/.gradle -type f -name "*.lock" | while read f; do rm $f; done  # remove gradle lock file
