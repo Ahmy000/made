@@ -8,8 +8,7 @@ android.os.Process.killProcess(android.os.Process.myPid());
 # add fragment to activity dynamically
 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 HelloFragment hello = new HelloFragment();
-fragmentTransaction.add(R.id.fragment_container, hello, "HELLO");
-fragmentTransaction.commit();
+fragmentTransaction.add(R.id.fragment_container, hello, "HELLO").commit();
 
 ## date: 0313
 # ActivityCompat
