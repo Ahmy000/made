@@ -1,4 +1,28 @@
 ### year: 2018
+
+## date: 0317
+#
+public abstract class Context
+public class Application extends ContextWrapper implements ComponentCallbacks2
+
+Note: There is normally no need to subclass Application. 
+In most situations, static singletons can provide the same functionality in a more modular way. 
+If your singleton needs a global context (for example to register broadcast receivers), 
+include Context.getApplicationContext() as a Context argument when invoking your singleton's getInstance() method.
+
+#
+Your app should implement the onSaveInstanceState() callback after the onPause() method, and before onStop(). 
+Do not implement this callback in onPause()/onStop()
+
+Instead of restoring the state during onCreate() you may choose to implement onRestoreInstanceState(), 
+which the system calls after the onStart() method
+
+#
+intent.putExtra("myKey", parcelableOrCommonArray );  
+Bundle extras = intent.getExtras(); -- Bundle is a key-value like map 
+-- 这写法并不一致, put的时候是单个key-value对，而get的时候一下拿出来，好吧，
+
+
 ## date: 0316
 # 
 java.lang.System -- operate JVM directly, including exit(0)
@@ -8,7 +32,13 @@ android.os.Process.killProcess(android.os.Process.myPid());
 # add fragment to activity dynamically
 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 HelloFragment hello = new HelloFragment();
-fragmentTransaction.add(R.id.fragment_container, hello, "HELLO").commit();
+fragmentTransaction.add(R.id.fragment_container, hello, fragTag).commit(); -- fragTag is an optional string, can used by findFragementByTag
+
+getSupportFragmentManager()
+                .beginTransaction()
+                .add(containerViewId, fragment, fragmentTag)
+                .disallowAddToBackStack()
+                .commit();
 
 ## date: 0313
 # ActivityCompat
