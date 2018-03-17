@@ -1,6 +1,8 @@
 
 ### year: 2018
 ## date: 0316
+# ref
+https://gist.github.com/stkent/349cdda974fdb9697be5
 
 ## hotkey
 # tool window/view
@@ -19,10 +21,12 @@ CMD + up: show file path
 CMD + down: go to definition
 CMD + u: super method/class
 
-# edit
 CMD + Shift + delete: go to last modification
-CMD + Alt + L: format code
 
+
+# edit
+CMD + Enter : fix 
+CMD + Alt + L: format code
 CMD + E: recent files
 
 
