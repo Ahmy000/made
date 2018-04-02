@@ -4,6 +4,9 @@
 ## questions
 # 有两个以上的activity都想在launcher里面，但是一旦启动app，由于有默认的activity，因此打开另一个的时候并不会显示该activity
 
+## apktool
+java -jar apktool_2.3.1.jar d xx.apk
+aapt l -a xx.apk
 
 ## adb
 
