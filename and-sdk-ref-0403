@@ -1,0 +1,16 @@
+### year: 2018
+
+## date: 0403
+# CookieManager
+* android.webkit.CookieManager
+* java.net.CookieManager(CookieHandler): A system-wide CookieHandler 
+看上去webview的cookieManager是一个全局的，也就是说所有webview实例共享一个，而net的cookieManager也是一个全局的。
+而最关键的是所有的cookie都是带url的，也就是domain
+
+# webview
+android.webkit.WebView
+android.webkit.WebChromeClient
+android.webkit.WebViewClient
+两种client针对的是不同的方面
+
+#
