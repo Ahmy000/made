@@ -31,6 +31,8 @@ adb shell input text "insert%syour%stext%shere"
 
 adb shell dumpsys package | grep -i com.android.chrome
 adb shell dumpsys package | grep -i com.android.chrome | grep Activity // this only reveal some named activity, but may not you wanted.
+
+adb shell dumpsys activity | grep -i run
 #
 adb install -r xx.apk // force reinstall
 adb -s emulator-5554 install myapp.apk
