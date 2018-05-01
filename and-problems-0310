@@ -1,6 +1,12 @@
 
 
 ### year: 2018
+## date: 0501
+# 
+i-CoordinatorLayout，toolbar可能overlap content，需要在layout添加 app:layout_behavior="@string/appbar_scrolling_view_behavior"
+i-一半屏幕的方式：layout_weight=1, layout_height=0dp; 横屏也类似
+i-隐藏toolbar的简单方式  supportActionBar?.hide()
+i-landscape layout: add folder: layout-land
 
 ## date: 0317
 #
