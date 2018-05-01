@@ -4,6 +4,7 @@
 ## date: 0501
 # 
 i-CoordinatorLayout，toolbar可能overlap content，需要在layout添加 app:layout_behavior="@string/appbar_scrolling_view_behavior"
+i- CoordinatorLayout is a super-powered FrameLayout. 一般用于root
 i-一半屏幕的方式：layout_weight=1, layout_height=0dp; 横屏也类似
 i-隐藏toolbar的简单方式  supportActionBar?.hide()
 i-landscape layout: add folder: layout-land
@@ -17,7 +18,7 @@ i- Suspending functions/lambda: 比如当async{} 中调用这个函数的时候�
 i- async vs launch，后者无法获取返回值但可以用join得到执行完成，前者可以通过wait来获取异步结果
 i- kotlin android extension中包含一个data class的@Parcelize/Parceable，无需去实现parceable的代码
 i- 需要的时候可以加 @SuppressLint("ParcelCreator") 来消除编译错误
-
+i- FAB default icon: ic_menu_ & ic_dialog_
 ## date: 0317
 #
 kotlin, no need of findViewById, use the id as the variable.
