@@ -10,7 +10,7 @@ i-landscape layout: add folder: layout-land
 i- kotlin guard:         val orientation = newConfig?.orientation.let { it } ?: return
 ?- 在android如果landscape/portrait的layout不一样，则看上去代价很大，因为要重新加载整个activity。
 考虑到这点，如果涉及到数据下载，需要把数据下载和cache部分采用特殊的形式处理，而不是一旋转就要重新load数据
-i- 
+?- setContentView这个函数安全吗？能动态的调整layout？我遇到的都是crash 
 
 ## date: 0317
 #
