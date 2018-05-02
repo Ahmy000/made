@@ -1,13 +1,14 @@
-
-
 ### year: 2018
+## date: 0502
+#
+ 
 ## date: 0501
 # 
-i-CoordinatorLayout，toolbar可能overlap content，需要在layout添加 app:layout_behavior="@string/appbar_scrolling_view_behavior"
+i- CoordinatorLayout，toolbar可能overlap content，需要在layout添加 app:layout_behavior="@string/appbar_scrolling_view_behavior"
 i- CoordinatorLayout is a super-powered FrameLayout. 一般用于root
-i-一半屏幕的方式：layout_weight=1, layout_height=0dp; 横屏也类似
-i-隐藏toolbar的简单方式  supportActionBar?.hide()
-i-landscape layout: add folder: layout-land
+i- 一半屏幕的方式：layout_weight=1, layout_height=0dp; 横屏也类似
+i- 隐藏toolbar的简单方式  supportActionBar?.hide()
+i- landscape layout: add folder: layout-land
 i- kotlin guard:         val orientation = newConfig?.orientation.let { it } ?: return
 ?- 在android如果landscape/portrait的layout不一样，则看上去代价很大，因为要重新加载整个activity。
 考虑到这点，如果涉及到数据下载，需要把数据下载和cache部分采用特殊的形式处理，而不是一旋转就要重新load数据.
