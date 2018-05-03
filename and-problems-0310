@@ -1,7 +1,11 @@
 ### year: 2018
 ## date: 0502
 #
- 
+i- package name 不能包含 interface
+i- AutoParcel may replace by kotlin( frankiesardo/auto-parcel)
+i- 这种autoParcel的语法还是很常见，自带编译，只需要定义接口即可
+i- string resource: name=air.weather，引用的时候是 air_weather
+
 ## date: 0501
 # 
 i- CoordinatorLayout，toolbar可能overlap content，需要在layout添加 app:layout_behavior="@string/appbar_scrolling_view_behavior"
