@@ -1,4 +1,12 @@
 ### year: 2018
+## date: 0504
+# EventBus ref: http://greenrobot.org/eventbus/documentation/how-to-get-started/
+i- Events are POJO (plain old Java object) without any specific requirements.
+i- Bus: need identify thread mode, UI or background thread
+i- Listeners/Subscriber: register/unregister, @Subscribe method, parameter is xxEvent
+i- bus.post(Event)
+# EventBus with Rx
+i- 
 ## date: 0502
 #
 i- package name 不能包含 interface
