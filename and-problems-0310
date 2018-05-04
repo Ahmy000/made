@@ -5,8 +5,24 @@ i- Events are POJO (plain old Java object) without any specific requirements.
 i- Bus: need identify thread mode, UI or background thread
 i- Listeners/Subscriber: register/unregister, @Subscribe method, parameter is xxEvent
 i- bus.post(Event)
+i- bus can hold many type events.
 # EventBus with Rx
 i- 
+
+#
+— also: Calls the specified function block with this value as its argument and returns this value: xx.also{ }
+
+— fold vs reduce , fold has a init value
+val sum = listOf(1, 2, 3).fold(3,  { sum, element -> sum + element })// 3+1+2+3 
+ val sum = listOf(1, 2, 3).reduce{ sum, element -> sum + element } // 1+2+3
+— blockingFirst/Last is from RxJava, belongs to Observable
+— lateinit vs by lazy: 
+— lazy() is a function,  a lamda function, and will execute first time.
+— by: delegate, three usages, by lazy{} , store a property in a map
+— lateinit can be check with . isInitialized
+— empty class: class Exxx
+— may interesting method under kotlin.collections
+— has kotlin.reflect package, such as KProperty\
 ## date: 0502
 #
 i- package name 不能包含 interface
