@@ -1,4 +1,11 @@
 ### year: 2018
+
+## date: 0505
+# loader
+?- loader看上去是某种程度上独立于UI的，当UI已经丢失了loader过程可能还在执行，当UI再次起来的时候能把这个loader的数据找到？但这样也有不好的地方，显然。
+i- Loader/LoaderManager/LoaderCallback
+i- AsyncTaskLoader/CursorLoader
+i- 
 ## date: 0504
 # EventBus ref: http://greenrobot.org/eventbus/documentation/how-to-get-started/
 i- Events are POJO (plain old Java object) without any specific requirements.
