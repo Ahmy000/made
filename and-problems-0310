@@ -7,6 +7,7 @@ ref: https://developer.android.com/studio/build/shrink-code
 - prevent Reverse Engineering
 - shrink: To make your APK file as small as possible, remove useless code, class, lib
 - minifyEnabled: should be set for release
+- ProGuard got renamed to minify but it is still called ProGuard in the documentation
 
 # linux related
 strip a.out: remove debug info from binary to, after strip, it's diffcult to debug it.
