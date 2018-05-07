@@ -1,4 +1,14 @@
 ### year: 2018
+## date: 0507
+# proguard
+ref: https://medium.com/@StartXLabs/android-proguard-shrink-optimize-and-obfuscate-1812665080ee
+ref: https://developer.android.com/studio/build/shrink-code
+- Shrinking, Optimizer, Obfuscator and Preverifier
+- prevent Reverse Engineering
+- shrink: To make your APK file as small as possible, remove useless code, class, lib
+
+# linux related
+strip a.out: remove debug info from binary to, after strip, it's diffcult to debug it.
 
 ## date: 0505
 # loader
