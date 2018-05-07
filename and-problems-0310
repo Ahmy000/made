@@ -6,6 +6,7 @@ ref: https://developer.android.com/studio/build/shrink-code
 - Shrinking, Optimizer, Obfuscator and Preverifier
 - prevent Reverse Engineering
 - shrink: To make your APK file as small as possible, remove useless code, class, lib
+- minifyEnabled: should be set for release
 
 # linux related
 strip a.out: remove debug info from binary to, after strip, it's diffcult to debug it.
