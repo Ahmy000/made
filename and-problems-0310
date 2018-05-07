@@ -9,6 +9,7 @@ ref: https://developer.android.com/studio/build/shrink-code
 
 # linux related
 strip a.out: remove debug info from binary to, after strip, it's diffcult to debug it.
+or use --strip-unneeded etc. paramaters when compiling.
 
 ## date: 0505
 # loader
