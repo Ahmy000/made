@@ -1,0 +1,35 @@
+## title: First Java application with RxJava, gradlew and Android Studio
+## this is the very basic java app, skip it for a professional devs
+
+# our targets
+- with Android Studio
+- Java Application(not android)
+- RxJava2
+- use gradlew(not only gradle)
+- run simple example from https://github.com/PacktPublishing/Learning-RxJava
+
+# some knowledge
+- it's not easy to create a java application with Android studio, but we use create build.gradle manaually; 
+and finally we wili import this project with Android Studio.
+- gradlew is a wrapper of gradle, u can use gradlew even gradle is not installed.
+- u need install gradle, and then make wrapper, u will find there will install gradle files again.
+- add all wrapper/ files in git
+
+# steps for only println
+- install gradle: brew install gradle
+- mkdir project folder, and run: gradle wrapper
+- create build.gradle
+- create source files: src/main/java/com/..../XX.java, src/test/java/com/.../XX.java
+- build.gradle: manifest Main Class
+- ./gradlew ass && ./gradlew jar
+- run 
+
+# steps for RxJava2
+- build.gradle: 
+- source code
+- after build, import to Android Studio
+
+# FAQ
+- java Main Class: attributes 'Main-Class': 'com.pit.rx.Launcher'
+- rxjava version: implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+- proxy or not
