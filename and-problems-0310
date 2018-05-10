@@ -1,4 +1,10 @@
 ### year: 2018
+## date: 0510
+# loader
+- Loaders have been deprecated as of Android P (API 28). 
+The recommended option for dealing with loading data while handling 
+the Activity and Fragment lifecycles is to use a combination of ViewModels and LiveData. 
+
 ## date: 0507
 # proguard
 ref: https://medium.com/@StartXLabs/android-proguard-shrink-optimize-and-obfuscate-1812665080ee
