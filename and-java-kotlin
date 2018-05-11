@@ -1,0 +1,9 @@
+###
+## date: 0512
+
+# Future/Excutor/Callable
+Excutor: threads to excute
+Future: to retrive result
+Callable: what you want to do
+
+ref: https://www.journaldev.com/1090/java-callable-future-example
