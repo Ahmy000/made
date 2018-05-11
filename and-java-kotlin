@@ -1,6 +1,7 @@
 ###
 ## date: 0512
 # handler: the simplest way.
+Handler() //Default constructor associates this handler with the Looper for the current thread.
 handler.sendMessage(msg);
 public void handleMessage(Message msg) { } // interface of Handler
 
