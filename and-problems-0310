@@ -1,5 +1,10 @@
 ### year: 2018
+## date: 0511
+# 
+- Callable/Future/Excutor: java concurrent
+
 ## date: 0510
+
 # loader
 - Loaders have been deprecated as of Android P (API 28). 
 The recommended option for dealing with loading data while handling 
