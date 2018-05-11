@@ -1,9 +1,14 @@
 ###
 ## date: 0512
 
-# Future/Excutor/Callable
+# Future/Excutor/Callable: java concurrent
 Excutor: threads to excute
 Future: to retrive result
 Callable: what you want to do
+
+ExecutorService executor = Executors.newFixedThreadPool(10);
+Future future = executor.submit(callable);
+future.get()
+executor.shutdown();
 
 ref: https://www.journaldev.com/1090/java-callable-future-example
