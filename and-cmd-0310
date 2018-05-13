@@ -8,6 +8,13 @@
 java -jar apktool_2.3.1.jar d xx.apk
 aapt l -a xx.apk
 
+## alias
+
+a.b='./gradlew assD'
+a.i='./gradlew insD'
+a.r.a='adb shell am start -n com.pit.airk/.MainActivity'
+a.r.b='adb shell am start -n com.pit.airk/com.pit.btc.MainActivity'
+
 ## adb
 
 #
