@@ -1,4 +1,9 @@
 ### year: 2018
+## date: 0514
+# retrofit2
+在retrofit2中，如果是kotlin，则已经不需要显示的调用Call及其Callback，
+但如果是java，则还需要这些。
+
 ## date: 0511
 # 
 - Callable/Future/Excutor: java concurrent
