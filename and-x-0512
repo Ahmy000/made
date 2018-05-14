@@ -1,4 +1,18 @@
 ###
+## date: 0514
+# retrofit2/rxjava2/kt: there is no Call/Callback of Retrofit with enquene.
+
+data class BTCPrice(val timestamp: Double, val market_price_usd: Double): Parcelable
+disposable = btcService.getCurrent("json")
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        { result -> btc_price.text = "${result.market_price_usd}" },
+                        { error -> Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show() },
+                        {}
+
+                )
+
 ## date: 0512
 # handler: the simplest way.
 Handler() //Default constructor associates this handler with the Looper for the current thread.
