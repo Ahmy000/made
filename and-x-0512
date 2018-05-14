@@ -1,8 +1,27 @@
 ###
 ## date: 0514
-# retrofit2/rxjava2/kt: there is no Call/Callback of Retrofit with enquene.
+# retrofit2/rxjava2/kt: 
+- there is no Call/Callback of Retrofit with enquene,
+- need not explicit okHttp,
+- must figure out which part is due to Rx & RxBinding
 
 data class BTCPrice(val timestamp: Double, val market_price_usd: Double): Parcelable
+interface BTCService {
+    @GET("stats")
+    fun getCurrent(@Query("format") format: String): Observable<BTCPrice>
+    companion object {
+        fun create(): BTCService {
+            val retrofit = Retrofit.Builder()
+                    .addCallAdapterFactory(
+                            RxJava2CallAdapterFactory.create())
+                    .addConverterFactory(
+                            GsonConverterFactory.create())
+                    .baseUrl("https://blockchain.info/")
+                    .build()
+            return retrofit.create(BTCService::class.java)
+        }
+    }
+}
 disposable = btcService.getCurrent("json")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
