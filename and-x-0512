@@ -1,5 +1,14 @@
 ###
 ## date: 0514
+# background executeion vs(Android 8.0)
+Service
+IntentService
+Loader
+JobSceduler
+HandlerThread
+AsyncTask
+Thread
+
 # by lazy: one usage of delegate, vs 'lateinit var'
 
     private val btcService by lazy {
