@@ -1,5 +1,11 @@
 ###
 ## date: 0514
+# by lazy: one usage of delegate, vs 'lateinit var'
+
+    private val btcService by lazy {
+        BTCService.create()
+    }
+    
 # retrofit2/rxjava2/kt: 
 - there is no Call/Callback of Retrofit with enquene,
 - need not explicit okHttp,
