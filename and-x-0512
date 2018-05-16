@@ -13,6 +13,9 @@ if str != null {
 -
 val str1 = str ?: "empty str"
 
+- guard
+val _str = str.let{it} ?: return
+
 ## date: 0514
 # background executeion vs(Android 8.0)
 Service
