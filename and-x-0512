@@ -1,4 +1,18 @@
 ###
+## date: 0516
+# optional
+var str: String? = null
+-
+str!!: not safe
+
+-
+if str != null {
+   str // str is not null now
+}
+
+-
+val str1 = str ?: "empty str"
+
 ## date: 0514
 # background executeion vs(Android 8.0)
 Service
