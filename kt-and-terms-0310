@@ -1,6 +1,10 @@
 
 ### year: 2018
 ## date: 0519
+# double colon/::
+- get class: BTCService::class.java)
+- 
+
 # object
 Object expressions: anonymous class  
 Object declarations: singleton
