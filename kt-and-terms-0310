@@ -1,5 +1,11 @@
 
 ### year: 2018
+## date: 0519
+# object
+Object expressions: anonymous class  
+Object declarations: singleton
+Companion Objects: companion object
+
 ## date: 0402
 #
 ABI: Application Binary Interface
