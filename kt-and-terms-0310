@@ -1,6 +1,16 @@
 
 ### year: 2018
 ## date: 0520
+# sealed class
+To declare a sealed class, you put the sealed modifier before the name of the class. 
+A sealed class can have subclasses, but all of them must be declared in the same file as the sealed class itself. 
+(Before Kotlin 1.1, the rules were even more strict: classes had to be nested inside the declaration of the sealed class).
+- nested inside
+- in the same file
+- sealed class is abstract
+- has no public constructor
+- subcalsses: usually is data class
+
 # arrow.Try
 Try{f()}.fold(onError(), onSuccess())
 Try{}.fold({}, {})
