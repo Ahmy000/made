@@ -1,5 +1,10 @@
 
 ### year: 2018
+## date: 0520
+# arrow.Try
+Try{f()}.fold(onError(), onSuccess())
+Try{}.fold({}, {})
+
 ## date: 0519
 # double colon/::
 - get class: BTCService::class.java)
