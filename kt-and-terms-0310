@@ -1,6 +1,12 @@
 
 ### year: 2018
 ## date: 0520
+# invoke() method
+
+# main func
+fun main(args : Array<String>) { 
+}
+
 # primary/secondary constructor
 A class in Kotlin can have a primary constructor and one or more secondary constructors. 
 The primary constructor is part of the class header: it goes after the class name (and optional type parameters).
