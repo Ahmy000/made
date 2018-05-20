@@ -3,6 +3,27 @@
 ## date: 0520
 # invoke() method
 
+class UrlScraper() {
+    operator fun invoke(url: String): List<ParseResult> {
+        return listOf(ParseResult(), ParseResult())
+    }
+}
+
+val sList = UrlScraper()("www.google.com")
+
+# this example is not easy to understand
+class Invokable {
+    var numberOfInvocations: Int = 0
+        private set
+    operator fun invoke(): Invokable { // can return any kind
+        numberOfInvocations ++
+        print(numberOfInvocations)
+        return this
+    }
+}
+
+fun invokeTwice(invokable: Invokable) = invokable()()
+
 # main func
 fun main(args : Array<String>) { 
 }
