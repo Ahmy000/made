@@ -1,6 +1,11 @@
 
 ### year: 2018
 ## date: 0520
+# private constructor
+class MyClass private constructor() {
+
+}
+
 # sealed class
 To declare a sealed class, you put the sealed modifier before the name of the class. 
 A sealed class can have subclasses, but all of them must be declared in the same file as the sealed class itself. 
