@@ -1,5 +1,13 @@
 
 ### year: 2018
+## date: 0521
+#
+
+# Return can be lifted out of 'when'
+return when(x) {
+    1 -> xx
+    2 -> yy
+}
 ## date: 0520
 # override operator
 + : plus
