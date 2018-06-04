@@ -1,5 +1,27 @@
 
 ### year: 2018
+## date: 0604
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
+export GRADLE_USER_HOME=~/.gradle
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export BUILD_TOOLS=$ANDROID_HOME/build-tools/27.0.3
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$BUILD_TOOLS
+
+#
+alias a.a='adb shell dumpsys activity | grep -i run'
+alias a.b='adb shell input keyevent 4 — back button'
+alias a.h='adb shell input keyevent 3 — home'
+alias a.r='adb shell input keyevent 187 — recent button'
+alias a.t="adb shell dumpsys activity activities | sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'"
+
+#
+#
+alias c.b='./gradlew aGNPD'
+alias c.u='adb uninstall com.xx'
+alias c.i='./gradlew iGNPD'
+alias c.c='./gradlew clean'
+alias c.r='adb shell am start -n com.xx/'
+
 ## date: 0310
 ## questions
 # 有两个以上的activity都想在launcher里面，但是一旦启动app，由于有默认的activity，因此打开另一个的时候并不会显示该activity
@@ -13,6 +35,7 @@ a.a='adb shell dumpsys activity | grep -i run'
 a.b='adb shell input keyevent 4 — back button'
 a.h='adb shell input keyevent 3 — home'
 a.r='adb shell input keyevent 187 — recent button'
+a.t="adb shell dumpsys activity activities | sed -En -e '/Stack #/p' -e '/Running activities/,/Run #0/p'"
 
 c.b='./gradlew assD'
 c.i='./gradlew insD'
