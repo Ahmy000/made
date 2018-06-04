@@ -1,5 +1,24 @@
 ### year: 2018
 
+## date: 0604
+# launchMode
+standard： 始终create一个activity，加入back stack
+singleTop: 也就是如果该activity在stack的最前面，则采用取代的方式onNewIntent；如不在最前面，则和standard相同
+singleTask： 始终采用取代的方式 onNewIntent
+singleInstance： 仅仅是把activity提到最前面，没有onNewIntent
+
+
+ref: https://developer.android.com/guide/topics/manifest/activity-element#lmode
+# task & task's back stack
+ref: https://developer.android.com/guide/components/activities/tasks-and-back-stack
+
+# Home/back button
+当 back的时候，总是finish一个activity，并在task stack上抹掉这个activty
+但是当home button，则不会finish，也不会改变那个task的back stack
+即便是在标准模式下，启动app然后home然后再点app，app并不会create而是之前那个。
+
+当一个task调用另一个task的activity：取决于不同的情况。
+
 ## date: 0403
 # CookieManager
 * android.webkit.CookieManager
