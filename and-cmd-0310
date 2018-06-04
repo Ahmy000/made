@@ -9,11 +9,15 @@ java -jar apktool_2.3.1.jar d xx.apk
 aapt l -a xx.apk
 
 ## alias
+a.a='adb shell dumpsys activity | grep -i run'
+a.b='adb shell input keyevent 4 — back button'
+a.h='adb shell input keyevent 3 — home'
+a.r='adb shell input keyevent 187 — recent button'
 
-a.b='./gradlew assD'
-a.i='./gradlew insD'
-a.r.a='adb shell am start -n com.pit.airk/.MainActivity'
-a.r.b='adb shell am start -n com.pit.airk/com.pit.btc.MainActivity'
+c.b='./gradlew assD'
+c.i='./gradlew insD'
+c.r.a='adb shell am start -n com.pit.airk/.MainActivity'
+c.r.b='adb shell am start -n com.pit.airk/com.pit.btc.MainActivity'
 
 ## adb
 
