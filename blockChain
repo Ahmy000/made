@@ -1,0 +1,100 @@
+
+
+### 0627 Block Chain Basic
+## questions
+1- when add a new transaction, but refresh chain will not show up this transaction, need mine
+2- when two clients, need register each other?
+
+
+## steps:
+i- start 5000/5001
+i- and run mine, can multi-times each
+I- run chain to check the result
+i- register 5001 to 5000
+i- run chain to check again
+i- run add new transactions
+i- run chain( no changes)
+i- run mine, find the chain refreshed 
+##
+Code: 
+Test: pipenv run python blockchain.py -p 5000/5001
+
+Need purge ALL_PROXY/http_proxy/https_proxy
+
+Http Get:
+http://127.0.0.1:5000/chain
+http://127.0.0.1:5000/mine
+http://127.0.0.1:5000/
+http://127.0.0.1:5000/nodes/resolve
+
+Http Post:(with Posman)
+[
+http://localhost:5000/nodes/register
+{
+	"nodes":["http://localhost:5001"]
+}
+]
+Post a transaction: 
+curl -X POST -H "Content-Type: application/json" -d ‘{ 
+"sender": "2c4b900e6b6f4e76b9c7bf47298958fc”, 
+"recipient": "84c2d5e1e2ea4e0b998c8c1823f872cb”, 
+"amount": 5 }' "http://localhost:5000/transactions/new”
+
+## 
+PoC: proof of concept
+PoW: proof of work: difficult to find but easy to verify
+
+## install python3 pip3 env
+brew install python3
+Python -m pip install Flask pipenv
+pipenv —python=python3.6
+pipenv install
+piping run python xx.py
+
+##
+Ref: https://learnblockchain.cn/2017/10/27/build_blockchain_by_python/
+Ref: https://github.com/dvf/blockchain
+
+##
+Run mine after transactions:
+{
+  "index": 9, 
+  "message": "New Block Forged", 
+  "previous_hash": "b880d6a1b6f1602789dd87e2709ca82411adb4541aa66cc8d078fb226a483083", 
+  "proof": 123075, 
+  "transactions": [
+    {
+      "amount": 1, 
+      "recipient": "756b67e53f2d40498b5816d54a9df5b5", 
+      "sender": "eaddba8b4b7c4f509a6b53125b6bd780"
+    }, 
+    {
+      "amount": 1, 
+      "recipient": "756b67e53f2d40498b5816d54a9df5b5", 
+      "sender": "0"
+    }
+  ]
+}
+Run chain to check:
+{
+  "chain": [
+    {
+      "index": 1, 
+      "previous_hash": "1", 
+      "proof": 100, 
+      "timestamp": 1530017838.297694, 
+      "transactions": []
+    }, 
+    {
+      "index": 2, 
+      "previous_hash": "4ed8280c80048663dad372a5dc143153528dd8fb971003a9a0aebef48d258c64", 
+      "proof": 234306, 
+      "timestamp": 1530017886.7120728, 
+      "transactions": [
+        {
+          "amount": 1, 
+          "recipient": "eaddba8b4b7c4f509a6b53125b6bd780", 
+          "sender": "0"
+        }
+      ]
+    }, 
